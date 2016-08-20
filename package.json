@@ -1,4 +1,6 @@
 {
+  "name": "recompose-relay",
+  "version": "0.3.1",
   "description": "Recompose helpers for Relay.",
   "scripts": {
     "update-schema": "node -r babel-core/register updateSchema.js"
