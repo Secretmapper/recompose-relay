@@ -1,8 +1,27 @@
-import Relay from 'react-relay'
-import toClass from 'recompose/toClass'
-import createHelper from 'recompose/createHelper'
+'use strict';
 
-const createContainer = options => BaseComponent =>
-  Relay.createContainer(toClass(BaseComponent), options)
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default createHelper(createContainer, 'createContainer', false)
+var _reactRelay = require('react-relay');
+
+var _reactRelay2 = _interopRequireDefault(_reactRelay);
+
+var _toClass = require('recompose/toClass');
+
+var _toClass2 = _interopRequireDefault(_toClass);
+
+var _createHelper = require('recompose/createHelper');
+
+var _createHelper2 = _interopRequireDefault(_createHelper);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createContainer = function createContainer(options) {
+  return function (BaseComponent) {
+    return _reactRelay2.default.createContainer((0, _toClass2.default)(BaseComponent), options);
+  };
+};
+
+exports.default = (0, _createHelper2.default)(createContainer, 'createContainer', false);
