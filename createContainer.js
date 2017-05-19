@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRelay = require('react-relay');
+var _reactRelay = require('react-relay/classic');
 
 var _reactRelay2 = _interopRequireDefault(_reactRelay);
 
