@@ -12,10 +12,6 @@ var _toClass = require('recompose/toClass');
 
 var _toClass2 = _interopRequireDefault(_toClass);
 
-var _createHelper = require('recompose/createHelper');
-
-var _createHelper2 = _interopRequireDefault(_createHelper);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var createContainer = function createContainer(options) {
@@ -24,4 +20,4 @@ var createContainer = function createContainer(options) {
   };
 };
 
-exports.default = (0, _createHelper2.default)(createContainer, 'createContainer', false);
+exports.default = createContainer;
